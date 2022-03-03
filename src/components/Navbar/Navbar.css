@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  min-width: 256px;
+  background-color: antiquewhite;
+  height: 100px;
+}
+
+.navbarImage {
+  height: 200px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.navbarImage:hover {
+  transform: scale(1.1);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&family=Pacifico&family=Praise&display=swap");
+
+.navbarText {
+  cursor: pointer;
+  font-family: "Dancing Script", cursive;
+  margin-right: 10px;
+  text-shadow: -0.0075em 0.0075em 0 mix(#fff, #e91e63, 94%),
+    0.005em 0.005em 0 mix(#fff, #e91e63, 60%),
+    0.01em 0.01em 0 mix(#fff, #e91e63, 62%),
+    0.015em 0.015em 0 mix(#fff, #e91e63, 64%),
+    0.02em 0.02em 0 mix(#fff, #e91e63, 66%),
+    0.025em 0.025em 0 mix(#fff, #e91e63, 68%),
+    0.03em 0.03em 0 mix(#fff, #e91e63, 70%),
+    0.035em 0.035em 0 mix(#fff, #e91e63, 72%);
+}

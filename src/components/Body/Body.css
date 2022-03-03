@@ -1,0 +1,96 @@
+.body {
+  background-image: url(../images/body.jpg);
+
+  max-height: 1000px;
+  min-width: 256px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+}
+
+.bodyTextToQR {
+  margin-top: 15px;
+
+  height: 50px;
+  width: 120px;
+}
+
+.bodyTextToQRtext {
+  border: solid 2px;
+  height: 45px;
+  width: 300px;
+  margin-top: 30px;
+  border-radius: 5%;
+  caret-color: rgb(221, 0, 0);
+  background-color: rgb(59, 48, 48);
+  font-style: italic;
+  color: rgb(141, 144, 144);
+  font-size: large;
+}
+
+.bodyTextToQRbutton {
+  margin-top: 30px;
+  background-color: rgb(110, 110, 66);
+  height: 50px;
+  width: 120px;
+  font-weight: 500;
+  font-size: 17px;
+  color: rgb(202, 202, 202);
+  border-radius: 10%;
+}
+
+.bodyTextToQRbutton:hover {
+  color: red;
+  background-color: black;
+}
+
+.bodyContainer {
+  border: 5px dashed rgb(124, 0, 0);
+  width: 1300px;
+  margin-top: 80px;
+  margin-left: 300px;
+  height: 700px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.download {
+  height: 40px;
+  width: 100px;
+  background-color: rgb(8, 8, 93);
+  border-radius: 20px 10px;
+  color: antiquewhite;
+  margin-top: 20px;
+}
+
+.download:hover {
+  color: rgb(8, 8, 93);
+  background-color: aliceblue;
+}
+
+.qrcode {
+  margin-top: 50px;
+}
+
+@media (max-width: 320px) {
+  .bodyContainer {
+    margin-left: 2px;
+    width: 300px;
+  }
+  .qrcode {
+    width: 300px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .bodyContainer {
+    margin-left: 2px;
+
+    width: 400px;
+  }
+  .qrcode {
+  }
+}
