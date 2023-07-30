@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{textAlign:"center"}}>
       <Navbar />
       <Body />
     </div>

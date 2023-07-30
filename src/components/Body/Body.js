@@ -1,11 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "./Body.css";
 import QRCode from "qrcode.react";
-// import ShareIcon from "@mui/icons-material/Share";
-import { FacebookShareButton } from "react-share";
-import { FacebookIcon } from "react-share";
-import { WhatsappShareButton } from "react-share";
-import { WhatsappIcon } from "react-share";
 
 function Body() {
   const [inputText, setInputText] = useState("");
@@ -15,7 +10,6 @@ function Body() {
     setQRCodeText(inputText);
   };
 
-  const shareData = () => {};
 
   const downloadQRCode = () => {
     const qrCodeURL = document
@@ -31,10 +25,7 @@ function Body() {
     document.body.removeChild(aEl);
   };
 
-  const onShare = {
-    files: <QRCode />,
-    url: "google.com",
-  };
+  
 
   return (
     <div className="body">
@@ -50,18 +41,14 @@ function Body() {
           Generate QR
         </button>
       </span>
-
+      <div className="space">
       <div className="bodyContainer">
-        <QRCode
-          className="qrcode"
-          id="qrCodeEl"
-          size={500}
-          value={qrCodeText}
-        />
+        <QRCode className="qrcode" id="qrCodeEl" size={200} value={qrCodeText} />
 
         <button className="download" onClick={downloadQRCode}>
           Download
         </button>
+      </div>
       </div>
       <p>Created by Rounit Sinha</p>
     </div>

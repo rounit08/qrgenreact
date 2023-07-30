@@ -1,19 +1,5 @@
 .body {
-  background-image: url(../images/body.jpg);
-
-  max-height: 1000px;
-  min-width: 256px;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  align-content: center;
-}
-
-.bodyTextToQR {
-  margin-top: 15px;
-
-  height: 50px;
-  width: 120px;
+background-color: rgb(234, 98, 234);
 }
 
 .bodyTextToQRtext {
@@ -42,18 +28,19 @@
 
 .bodyTextToQRbutton:hover {
   color: red;
-  background-color: black;
+  background-color: rgb(214, 214, 95);
 }
 
 .bodyContainer {
   border: 5px dashed rgb(124, 0, 0);
-  width: 1300px;
   margin-top: 80px;
-  margin-left: 300px;
-  height: 700px;
-  align-items: center;
-  flex-direction: column;
+  height: 60vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.space{
+  padding: 20px;
 }
 
 .download {
@@ -61,36 +48,16 @@
   width: 100px;
   background-color: rgb(8, 8, 93);
   border-radius: 20px 10px;
-  color: antiquewhite;
+  color: rgb(245, 196, 131);
   margin-top: 20px;
 }
 
 .download:hover {
   color: rgb(8, 8, 93);
-  background-color: aliceblue;
+  background-color: rgb(149, 192, 230);
 }
 
 .qrcode {
   margin-top: 50px;
 }
 
-@media (max-width: 320px) {
-  .bodyContainer {
-    margin-left: 2px;
-    width: 300px;
-  }
-  .qrcode {
-    width: 300px;
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .bodyContainer {
-    margin-left: 2px;
-
-    width: 400px;
-  }
-  .qrcode {
-  }
-}
